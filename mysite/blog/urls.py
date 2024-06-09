@@ -7,5 +7,6 @@ app_name='blog'
 urlpatterns = [
     path('', views.home,  name='homepage'),
     #blog is the base, anything in the quotes that is put up at the browser will show index.html only
+    path('<slug:post>/', views.post_single, name='post_single'),
     
 ]
