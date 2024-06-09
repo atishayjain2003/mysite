@@ -17,5 +17,8 @@ def home(request):
 def post_single(request, post):
     post=get_object_or_404(Post, slug=post, status='published')
     return render(request, 'single.html', {'post':post})
+def homex(request):
+    return render(request, "home1.html")
+
 
 
